@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AppSemoc2</string>
+    <string name="Semoc">Semoc</string>
+    <string name="Semoc2">Semana de Mobilização Científica</string>
+    <string name="SaibaMais">Saiba Mais</string>
+    <string name="Texto1">A Semana de Mobilização Científica (SEMOC) é uma atividade promovida anualmente pela Universidade Católica do Salvador desde 1998, organizada e executada democraticamente pelos diversos segmentos da comunidade acadêmica (professores, alunos e funcionários).</string>
+    <string name="Texto2">Integrando a programação regular de atividades do calendário acadêmico da UCSal, a SEMOC tem gerado importantes desdobramentos para o fortalecimento da ambiência acadêmica, dentre os quais se inclui o estímulo à sensibilização e mobilização dos diversos segmentos da comunidade universitária, com repercussões na produção e socialização da pesquisa científica, no intercâmbio de atividades culturais e na articulação intercampi e interinstitucional de docentes, discentes, funcionários e pesquisadores em torno das temáticas selecionadas.</string>
+    <string name="Texto3">Dentre seus principais objetivos, a SEMOC pretende estimular e socializar as iniciativas no campo da pesquisa científica, contribuir para a conscientização da comunidade acadêmica sobre a importância da função pesquisa para a Universidade.</string>
+    <string name="Calendario">Calendário</string>
 </resources>

@@ -1,18 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
+    <ImageView
+        android:id="@+id/ActivityMain_ImagemView_group1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/group2"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
+    <TextView
+        android:id="@+id/ActivityMain_TextView_Semoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/Semoc"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintEnd_toEndOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintTop_toTopOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <TextView
+        android:id="@+id/ActivityMain_TextView_Semoc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Semoc2"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintEnd_toEndOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintStart_toStartOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintTop_toTopOf="@+id/ActivityMain_TextView_Semoc"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintEnd_toEndOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/ActivityMain_ImagemView_group1"
+        app:layout_constraintTop_toTopOf="@+id/ActivityMain_TextView_Semoc2"
+        app:layout_constraintVertical_bias="0.183"
+        android:backgroundTint="@color/chocolate_brown"
+        android:text="@string/SaibaMais"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ActivityMain_CardView_card1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ActivityMain_ImagemView_group1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Texto1"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@id/ActivityMain_Button_button2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/ActivityMain_CardView_card1"
+        app:layout_constraintBottom_toTopOf="@id/ActivityMain_CardView_card2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/chocolate_brown"
+        android:text="@string/Calendario"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ActivityMain_CardView_card2"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/ActivityMain_Button_button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/blue">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ActivityMain_ImagemView_meet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/meet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/teste"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Texto3"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@id/ActivityMain_ImagemView_meet"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:ignore="NotSibling" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ActivityMain_CardView_card3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:cardCornerRadius="20dp"
+        android:elevation="10dp"
+        app:layout_constraintTop_toBottomOf="@id/ActivityMain_CardView_card2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/Texto2"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
