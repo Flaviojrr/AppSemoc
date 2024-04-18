@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inscription">
+    <TextView
+        android:id="@+id/InscriptionMain_TextView_TextInscricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Inscricao"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/InscriptionMain_TextView_TextNomeCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Completo:"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_TextView_TextInscricao"
+        app:layout_constraintStart_toStartOf="@id/InscriptionMain_EditText_EditTextNomeCompleto"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/InscriptionMain_EditText_EditTextNomeCompleto"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_TextView_TextNomeCompleto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/boder"/>
+
+    <TextView
+        android:id="@+id/InscriptionMain_TextView_TextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTextNomeCompleto"
+        app:layout_constraintStart_toStartOf="@id/InscriptionMain_EditText_EditTextEmail"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/InscriptionMain_EditText_EditTextEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTextNomeCompleto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boder"/>
+
+    <TextView
+        android:id="@+id/InscriptionMain_TextView_TextCPF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPF: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTextEmail"
+        app:layout_constraintStart_toStartOf="@id/InscriptionMain_EditText_EditTextCPF"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/InscriptionMain_EditText_EditTextCPF"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTextEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boder"/>
+
+    <TextView
+        android:id="@+id/InscriptionMain_TextView_TextDataDeNascimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTextCPF"
+        app:layout_constraintStart_toStartOf="@id/InscriptionMain_EditText_EditTextDataDeNascimento"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/InscriptionMain_EditText_EditTextDataDeNascimento"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/boder"
+        app:layout_constraintEnd_toStartOf="@id/InscriptionMain_EditText_EditTelefone"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTextCPF"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/InscriptionMain_TextView_TextTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefone: "
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTextCPF"
+        app:layout_constraintStart_toStartOf="@id/InscriptionMain_EditText_EditTelefone"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/InscriptionMain_EditText_EditTelefone"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/boder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTextCPF"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue"
+        android:text="Finalizar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InscriptionMain_EditText_EditTelefone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

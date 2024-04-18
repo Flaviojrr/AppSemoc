@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calendar">
+
+    <TextView
+        android:id="@+id/CalendarMain_TextView_TextCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Calendario"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CalendarMain_CardView_CardViewMesaRedonda"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/blue"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalendarMain_TextView_TextCalendario"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/CalendarMain_TextView_CardViewMesaRedonda_TextMesaRedonda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/Mesas"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/CalendarMain_TextView_CardViewMesaRedonda_TextMesaRedondaData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="24/10"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/CalendarMain_TextView_CardViewMesaRedonda_TextMesaRedonda" />
+
+            <TextView
+                android:id="@+id/CalendarMain_TextView_CardViewMesaRedonda_TextMesaRedonda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8dp"
+                android:text="EIXO 3: Direitos Sociais, Educação, Cultura e Cidadania\nMesa-redonda: RELAÇÕES FAMILIARES E DESENVOLVIMENTO SOCIAL SUSTENTÁVEL \nCoordenação: Prof. Dr. Giancarlo Petrini (UCSAL) Participantes: Profa. Dra. Ana Barreiros de Carvalho (UEFS) Laíse da Cruz Macena (UEFS)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/CalendarMain_TextView_CardViewMesaRedonda_TextMesaRedondaData" />
+
+            <Button
+                android:id="@+id/CalendarMain_Button_CardViewMesaRedonda_Button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/yellow"
+                android:text="@string/Inscrevase"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/CalendarMain_TextView_CardViewMesaRedonda_TextMesaRedonda2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CalendarMain_CardView_CardViewMiniCursos"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/chocolate_brown"
+        app:cardCornerRadius="20dp"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CalendarMain_CardView_CardViewMesaRedonda"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/CalendarMain_TextView_CardViewMiniCursos_TextMesaRedonda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/MiniCursos"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/CalendarMain_TextView_CardViewMiniCursos_TextMesaRedondaData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="26/10"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/CalendarMain_TextView_CardViewMiniCursos_TextMesaRedonda" />
+
+            <TextView
+                android:id="@+id/CalendarMain_TextView_CardViewMiniCursos_TextMesaRedonda2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="8dp"
+                android:text="Minicurso de produção de sabão pelo método cold process: introdução teórica e prática de produção de sabão natural e artesanal\n\n CARGA HORÁRIA: 4 horas \nDOCENTE: Heloisa Maria de Carvalho e Albuquerque \n*Apenas 15 vagas disponíveis ** Os inscritos neste curso devem usar  usar sapato fechado, calça comprida e blusa que proteja os braços, vestimentas necessárias para entrar em um laboratório de química"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/CalendarMain_TextView_CardViewMiniCursos_TextMesaRedondaData" />
+
+            <Button
+                android:id="@+id/CalendarMain_Button_CardViewMiniCursos_Button"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/yellow"
+                android:text="@string/Inscrevase"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/CalendarMain_TextView_CardViewMiniCursos_TextMesaRedonda2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
